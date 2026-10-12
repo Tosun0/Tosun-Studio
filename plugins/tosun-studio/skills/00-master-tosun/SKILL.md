@@ -13,6 +13,8 @@ Master orchestrator only. Keep user-facing copy in Korean and internal routing i
 - Delegate production to the sibling `01-storyboard`, `02-image`, `03-video`, and `04-remotion` skills. Do not duplicate their production instructions.
 - Treat prompt preparation and publishing as internal operations, not user-visible sequences.
 - Read only the active manifest and current sequence task. Use the bundled bridge; never ask the user to open plugin folders or run scripts.
+- Read this entrypoint and the selected sibling skill before production. Introduce the active route once in Korean, for example `토순 스튜디오 마스터 → 영상 스킬 → Higgsfield`. Record the resolved skill paths and plugin version in the existing project event; reading a skill is not proof that its workflow was followed.
+- After a plugin update, refresh the installed plugin and compare its version and changed skill files with the release source. A repository commit alone is not an installed update. If refresh or session reload is pending, report that boundary explicitly.
 - Never expose cache paths, manifests, bridge commands, or raw diagnostics.
 
 ## Permanent intake
@@ -45,6 +47,7 @@ The user may begin at a later sequence by attaching its required input. An attac
 
 - Never invent provider availability, generation results, local files, approvals, or verification.
 - A request artifact is not media output.
+- Preserve the user's verification choice across revisions. When the user will review the video, record `not_run` and wait for their assessment; do not replace it with an automatic quality claim. Keep provider completion, agent verification, and user approval separate.
 - If an image, Higgsfield, or Remotion capability is unavailable, stop and report `waiting_external`, `failed`, or `not_run`.
 - Report only status, sequence, displayed output, next action, and blocker unless failure details are necessary.
 
