@@ -35,6 +35,8 @@
 
 이미지는 Codex 이미지 생성 기능을 사용하고, 영상은 연결된 Higgsfield 플러그인을 호출합니다. Higgsfield가 연결되지 않았거나 실제 결과를 반환하지 않으면 `waiting_external`에서 멈추며 생성 완료로 보고하지 않습니다.
 
+영상 기본 모델은 Kling 3.0 Pro이며, 대사가 있으면 음성을 함께 생성합니다. 생성 전 현재 크레딧 견적을 확인하고 승인된 비용 범위에서 컷당 1회 요청합니다. 모델과 비용 운영 기준은 `plugins/tosun-studio/skills/03-video/SKILL.md`에서 관리합니다.
+
 ## 파일 하이어라키
 
 ```text
