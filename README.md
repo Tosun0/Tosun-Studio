@@ -84,6 +84,8 @@ Tosun Studio/
 
 ## 실행 구조
 
+개별 컷 납품은 `S1C1` 같은 씬·컷 ID를 사용합니다. 최신 MP4는 `S1C1.mp4`처럼 최상위에 두고, 해당 프롬프트·제작내역·참조는 `S1C1/`에 둡니다. 최상위의 `제작현황.md` 하나로 버전을 확인하며, 이전 버전은 `_Old/S1C1/v003/`처럼 보관합니다. 기존 묶음 자료는 `_Old/공통자료/`로 보존합니다. 상세 기준은 [개별 컷 납품 구조](plugins/tosun-studio/skills/00-master-tosun/references/delivery-layout.md)에서 관리합니다.
+
 Codex → Tosun Studio Master skill → storyboard/image/video/remotion 하위 skill → 플러그인 bridge → tosun_studio.py 엔진 → workspace
 
 사용자는 Codex 대화창에서 명령을 입력하고 결과를 승인합니다. 플러그인 폴더, Python 파일, GUI를 직접 열 필요가 없습니다.

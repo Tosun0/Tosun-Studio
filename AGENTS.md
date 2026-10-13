@@ -12,6 +12,7 @@
 8. Use the naming rules in `config/naming.json`.
 9. If an external provider is not configured, generate a request artifact and stop with `waiting_external`.
 10. Report verification as `success`, `failed`, or `not_run`.
+11. For separate-cut exports and delivery-folder cleanup, follow `plugins/tosun-studio/skills/00-master-tosun/references/delivery-layout.md`. Use scene/cut IDs such as `S1C1`, keep latest MP4s at the delivery root and matching documents in ID folders, with one root index and versioned history under `_Old`.
 
 ## User-facing response rules
 

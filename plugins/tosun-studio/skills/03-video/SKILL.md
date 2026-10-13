@@ -31,6 +31,7 @@ Work only on the video sequence. Master-Tosun owns state changes and approval.
 
 ## Review and handoff
 
+- For individual-cut delivery, follow the master's [delivery layout](../00-master-tosun/references/delivery-layout.md). Return the exact submitted prompt and generation facts for that cut; do not scatter prompt packs or per-attempt notes at the delivery root.
 - Unless the user takes over verification, validate actual decoding, duration, resolution, frame rate, codec, and audio presence when applicable. For dialogue, also check the audible line against the visible speaker and mouth movement; a transcript alone cannot establish who spoke.
 - When the user says they will verify, carry that choice through retries and record `not_run`. Report provider completion without claiming that speech, speaker assignment, or lip sync is correct. An explicit user assessment is recorded as user review, separately from agent verification.
 - Do not claim a requested frame rate from the prompt or model name. Inspect the output; preserve the original and report any conversion needed for delivery.

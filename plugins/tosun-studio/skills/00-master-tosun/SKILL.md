@@ -51,6 +51,11 @@ The user may begin at a later sequence by attaching its required input. An attac
 - If an image, Higgsfield, or Remotion capability is unavailable, stop and report `waiting_external`, `failed`, or `not_run`.
 - Report only status, sequence, displayed output, next action, and blocker unless failure details are necessary.
 
+## Delivery folders
+
+- Before exporting individual cuts or organizing an existing delivery, read [delivery-layout.md](references/delivery-layout.md). Use scene/cut IDs, root MP4s, and matching document folders. Master owns the layout and the single current delivery index; child skills supply the media, exact prompt, and result facts.
+- Keep the internal workspace structure unchanged. A user delivery folder is a curated view, not a dump of request JSON, reports, or caches.
+
 ## Delegation routing
 
 - `하위 에이전트`, `내부 에이전트`, `병렬 검증`, or `컷별 담당` means bounded internal subagents, never user-visible tasks.
